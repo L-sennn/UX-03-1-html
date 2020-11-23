@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>코로나랜선여행</title>
+	<style type="text/css">
+		@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	html{font-family: 'NeoDunggeunmo'}
+
+	section, body{margin: 0}
+
+	img{display: block;
+		margin: auto;
+		width: 100%;}
+	.prepare{margin: 100px 0;
+			z-index: 3}
+
+	h1{font-size: 2.5em;
+		margin-bottom: 30px;
+		text-align: center;
+		line-height: 1.2em;
+		z-index: 3;}
+	.white{color: white;}
+	.blue{color: #0000ff;}
+	.right{text-align: right;}
+	.big{font-size: 4em;}
+	.mark_red{background-color: #ff0000;
+			color: white;
+			z-index: 3;}
+	.mark_black{background-color: black;
+			color: white;
+			z-index: 3;}
+
+	.row{width: 1000px;
+		margin: auto;}
+
+	.gradient{width:100%; 
+			height:100px;
+			background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,255,1) 100%);}
+
+	.background{background: url('buildings.jpg'); 
+					background-size:100% auto; 
+					background-position: 0px,-100px; 
+					background-repeat: no-repeat; 
+					min-height: 600px; 
+					padding-top: 100px; 
+					background-attachment: fixed;}
+	.text-bg{margin: auto;}
+
+	.welcome{width: 1000px;
+			margin: auto;
+			animation: rr 3s infinite linear;
+			z-index: 3;}
+	@keyframes rr{to{transform: rotate3d(0,1,0,360deg);}}
+
+	.relative{position: relative;}
+	.section2{margin: 0}
+	.section3{width: 100%;
+			background: blue;
+			margin: 0;
+			padding: 100px 0;
+			height: 800px;}
+
+	.barcelona{margin:0;
+				margin-right: 50px;}
+
+	#barcel{width: 100%;
+		position: absolute;
+		left: 0px; bottom: 0px;
+		z-index: 20;}
+
+	.earth{position: fixed;
+		top: 500px;
+		right: 50px;
+		z-index: -1;}
+
+	.people{position: fixed;
+		top:30px;
+		left: 50px;
+		z-index: -1;
+		width: 450px;}
+
+
+
+	</style>
+</head>
+<body>
+	<section class="relative">
+		<div class="wrap">
+			<div class="people"><img src="bluepeople.gif"></div>
+			<div class="earth"><img src="giphy.gif"></div>
+		</div>
+	</section>
+
+	<section class="row">
+		<h1>당신에게 필요한 건 오직<br><u>(1)컴퓨터 (2)마우스 (3)눈 (4)손</u></h1>
+		<div class="prepare"><img src="prepare.png"></div>
+		<h1 class="blue big">모두 준비 하셨나요?</h1>
+	</section>
+
+	<section class="section2">
+		<div class="gradient"></div>
+		<div class="background">
+			<div class="text-bg">
+				<div class="welcome"><img src="welcome.png"></div>
+				<h1 class="white big"><mark class="mark_red">그럼 모시겠습니다.</mark></h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="section3 relative">
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<h1 class="right barcelona"><mark class="mark_black">열정의 나라 스페인의<br>제 2의 도시, 바르셀로나로.</mark></h1>
+		<h1 class="right barcelona white">>>> GOGO >>></h1>
+		<div><img src="barcelona.png" id="barcel"></div>
+	</section>
+
+
+
+
+
+
+</body>
+</html>
